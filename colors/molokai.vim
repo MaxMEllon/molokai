@@ -111,6 +111,8 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 
+hi rubyModule      guifg=#88ff88
+
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#55715E
@@ -233,6 +235,7 @@ if &t_Co > 255
    hi NonText         ctermfg=59
 
    hi SpecialKey      ctermfg=59
+   hi rubyModule      ctermfg=154
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
@@ -270,5 +273,6 @@ if &t_Co > 255
        hi LineNr          ctermfg=15  ctermbg=240
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
+       hi rubyModule      ctermfg=154
    endif
 end
