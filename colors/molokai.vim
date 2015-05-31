@@ -32,7 +32,7 @@ endif
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
 hi Number          guifg=#AE81FF
-hi String          guifg=#E6DB74
+hi Stdarkring          guifg=#E6DB74
 hi Conditional     guifg=#F92672               gui=bold
 hi Constant        guifg=#AE81FF               gui=bold
 hi Cursor          guifg=#000000 guibg=#F8F8F0
@@ -140,11 +140,11 @@ end
 "
 if &t_Co > 255
    if s:molokai_original == 1
-      hi Normal                   ctermbg=234
+      hi Normal                   ctermbg=232
       hi CursorLine               ctermbg=17     cterm=bold
       hi CursorLineNr ctermfg=220                cterm=bold
    else
-      hi Normal       ctermfg=252 ctermbg=234
+      hi Normal       ctermfg=252 ctermbg=232
       hi CursorLine               ctermbg=17     cterm=bold
       hi CursorLineNr ctermfg=220                cterm=bold
    endif
