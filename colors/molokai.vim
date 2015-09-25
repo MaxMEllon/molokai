@@ -236,6 +236,7 @@ if &t_Co                   > 255
 
   hi SpecialKey            ctermfg=59
   hi rubyModule            ctermfg=154
+  hi rubyClass             ctermfg=151
 
   if exists("g:rehash256") && g:rehash256 == 1
     hi Normal              ctermfg=252 ctermbg=234
@@ -274,5 +275,6 @@ if &t_Co                   > 255
     hi NonText             ctermfg=239
     hi SpecialKey          ctermfg=239
     hi rubyModule          ctermfg=154
+    hi rubyClass             ctermfg=151
   endif
 end
