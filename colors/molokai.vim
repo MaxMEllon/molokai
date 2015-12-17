@@ -116,7 +116,7 @@ hi rubyModule              guifg=#88ff88
 if s:molokai_original      == 1
   hi Normal                guifg=#F8F8F2 guibg=#272822
   hi Comment               guifg=#55715E
-  hi CursorLine            guibg=#FE3D32
+  hi CursorLine            guibg=#333D62
   hi CursorLineNr          guifg=#FD971F               gui=none
   hi CursorColumn          guibg=#3E3D32
   hi ColorColumn           guibg=#3B3A32
