@@ -163,7 +163,7 @@ if &t_Co                   > 255
   hi DiffAdd               ctermbg=24
   hi DiffChange            ctermfg=181 ctermbg=239
   hi DiffDelete            ctermfg=162 ctermbg=53
-  hi DiffText              ctermbg=102   cterm=bold
+  hi DiffText              ctermbg=102 cterm=bold
 
   hi Directory             ctermfg=118               cterm=bold
   hi Error                 ctermfg=219 ctermbg=89
@@ -188,10 +188,10 @@ if &t_Co                   > 255
   hi Operator              ctermfg=161
 
   " complete menu
-  hi Pmenu                 ctermfg=81  ctermbg=90
-  hi PmenuSel              ctermfg=81  ctermbg=22
-  hi PmenuSbar             ctermbg=22
-  hi PmenuThumb            ctermfg=81
+  hi Pmenu                 ctermfg=235  ctermbg=51
+  hi PmenuSel              ctermfg=11   ctermbg=21  cterm=bold
+  hi PmenuSbar             ctermbg=91
+  hi PmenuThumb            ctermfg=10
 
   hi PreCondit             ctermfg=118               cterm=bold
   hi PreProc               ctermfg=118
@@ -208,7 +208,7 @@ if &t_Co                   > 255
     hi SpellBad            ctermbg=52
     hi SpellCap            ctermbg=17
     hi SpellLocal          ctermbg=17
-    hi SpellRare           ctermfg=none ctermbg=none  cterm=reverse
+    hi SpellRare           ctermfg=none ctermbg=none cterm=reverse
   endif
   hi Statement             ctermfg=161               cterm=bold
   hi StatusLine            ctermfg=19  ctermbg=253
