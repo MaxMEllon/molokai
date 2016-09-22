@@ -85,10 +85,10 @@ hi SpecialChar             guifg=#F92672               gui=bold
 hi SpecialComment          guifg=#7E8E91               gui=bold
 hi Special                 guifg=#66D9EF guibg=bg
 if has("spell")
-  hi SpellBad              guisp=#FF0000 gui=undercurl
-  hi SpellCap              guisp=#7070F0 gui=undercurl
-  hi SpellLocal            guisp=#70F0F0 gui=undercurl
-  hi SpellRare             guisp=#FFFFFF gui=undercurl
+  hi SpellBad              guibg=#770000
+  hi SpellCap              guibg=#7070F0
+  hi SpellLocal            guibg=#70F0F0
+  hi SpellRare             guibg=#FFFFFF
 endif
 hi Statement               guifg=#F92672               gui=bold
 hi StatusLine              guifg=#455354 guibg=fg
@@ -101,18 +101,19 @@ hi Todo                    guifg=#FFFFFF guibg=bg      gui=bold
 
 hi Typedef                 guifg=#66D9EF
 hi Type                    guifg=#66D9EF               gui=none
-hi Underlined              guifg=#808080               gui=underline
+hi Underlined              guifg=#808080
 
 hi VertSplit               guifg=#808080 guibg=#080808 gui=bold
-hi VisualNOS               guibg=#403D3D
-hi Visual                  guibg=#403D3D
+hi VisualNOS               guibg=#0000EE
+hi Visual                  guibg=#0000EE
 hi WarningMsg              guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu                guifg=#66D9EF guibg=#000000
 
 hi TabLineFill             guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine                 guibg=#1B1D1E guifg=#808080 gui=none
 
-hi rubyModule              guifg=#88ff88
+" hi rubyModule              guifg=#88ff88
+" hi elixirModuleDefine      guifg=#88ff88
 
 if s:molokai_original      == 1
   hi Normal                guifg=#F8F8F2 guibg=#272822
@@ -221,7 +222,7 @@ if &t_Co                   > 255
 
   hi Typedef               ctermfg=81
   hi Type                  ctermfg=81                cterm=none
-  hi Underlined            ctermfg=244               cterm=underline
+  hi Underlined            ctermfg=244
 
   hi VertSplit             ctermfg=244 ctermbg=232   cterm=bold
   hi VisualNOS             ctermbg=21
@@ -236,9 +237,11 @@ if &t_Co                   > 255
   hi NonText               ctermfg=59
 
   hi SpecialKey            ctermfg=59
-  hi rubyModule            ctermfg=154
-  hi rubyClass             ctermfg=118
-  hi rubyConstant          ctermfg=161
+  " hi rubyModule            ctermfg=154
+  " hi rubyClass             ctermfg=118
+  " hi rubyConstant          ctermfg=161
+
+  " hi elixirModuleDefine    ctermfg=154
 
   if exists("g:rehash256") && g:rehash256 == 1
     hi Normal              ctermfg=252 ctermbg=234
@@ -276,8 +279,10 @@ if &t_Co                   > 255
     hi LineNr              ctermfg=15  ctermbg=240
     hi NonText             ctermfg=239
     hi SpecialKey          ctermfg=239
-    hi rubyModule          ctermfg=154
-    hi rubyClass           ctermfg=118
-    hi rubyConstant        ctermfg=161
+    " hi rubyModule          ctermfg=154
+    " hi rubyClass           ctermfg=118
+    " hi rubyConstant        ctermfg=161
+
+    " hi elixirModuleDefine    ctermfg=154
   endif
 end
